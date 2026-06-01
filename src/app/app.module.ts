@@ -3,10 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HeroComponent } from './hero/hero.component';
+import { ContentComponent } from './content/content.component';
+import { ResourcesComponent } from './resources/resources.component';
+import { ReviewsComponent } from './reviews/reviews.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    HeroComponent,
+    ContentComponent,
+    ResourcesComponent,
+    ReviewsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

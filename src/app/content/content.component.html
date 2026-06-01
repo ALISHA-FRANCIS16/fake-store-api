@@ -1,0 +1,60 @@
+<div class="heading">
+    <h1 class="sub1">Tired of fake JSON and Lorem Ipsum?</h1>
+    <p class="sub2">FakeStoreAPI gives you clean, realistic e-commerce data: products, carts, users, and more.
+        accessible in seconds
+        via REST.</p>
+</div>
+
+<div class="request-box">
+    <div class="left">
+        <h3>Example Request</h3>
+        <div class="btn">
+            <button (click)="showCode='js'">Javascript</button>
+            <button (click)="showCode='python'">Python</button>
+            <button (click)="showCode='curl'">Curl</button>
+            <button (click)="showCode='java'">Java</button>
+        </div>
+
+        <div class="left-request">
+            <pre *ngIf="showCode=='js'">fetch('https://fakestoreapi.com/products/1')
+            .then(res=>res.json())            
+            .then(json=>console.log(json))
+        </pre>
+
+            <pre *ngIf="showCode=='python'">import requests
+            response = requests.get('https://fakestoreapi.com/products/1')
+            print(response.json())
+        </pre>
+
+            <pre *ngIf="showCode=='curl'">curl -X GET 'https://fakestoreapi.com/products/1'
+        </pre>
+
+            <pre *ngIf="showCode=='java'">URL url = new URL("https://fakestoreapi.com/products/1");
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+            con.setRequestMethod("GET");
+            con.connect();
+             BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+            String line;
+        </pre>
+
+        </div>
+    </div>
+
+    <div class="right">
+        <h3>API Response</h3>
+        <div class="right-response">
+            <pre>
+        (
+            "id": 1,
+            "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+            "price": 109.95,
+            "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+            "category": "men's clothing",
+            "rating": 
+              "rate": 3.9,
+              "count": 120
+        )
+            </pre>
+        </div>
+    </div>
+</div>

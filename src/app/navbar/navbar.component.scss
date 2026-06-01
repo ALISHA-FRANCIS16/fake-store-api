@@ -1,0 +1,27 @@
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 20px 95px;
+}
+
+.logo{
+    height: 46px;
+    width: 50px;
+}
+
+.list{
+    display: flex;
+    gap: 70px;
+    list-style: none;
+    color: rgb(118, 118, 118);
+    font-size: 14px;
+}
+
+.list li{
+    cursor: pointer;
+}
+
+.list li:hover{
+    color: rgb(75, 75, 75);
+}
