@@ -1,78 +1,79 @@
 .container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 85vh;
-    margin: 0 100px;
-    padding: 0 100px;
-    gap: 40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:85vh;
+    margin:0 6%;
+    padding:0 4%;
+    gap:30px;
+    flex-wrap:wrap;
 }
 
 .sub1{
-    margin: -15px 0px 0px 0px;
-    color: #434343;
-    font-size: 14px;
+    margin:-14px 0 0 0;
+    color:#434343;
+    font-size:14px;
 }
 
 .sub2{
-    margin: 30px 0px 0px 0px;
-    color: rgb(100, 100, 100);
-    font-size: 14px;
+    margin:30px 0 0 0;
+    color:rgb(100,100,100);
+    font-size:14px;
 }
 
 .buttons{
-    display: flex;
-    gap: 20px;
-    margin-top: 15px;
+    display:flex;
+    gap:20px;
+    margin-top:16px;
+    flex-wrap:wrap;
 }
 
 .btn1{
-    background-color: #802c6e;
-    padding: 10px 40px;
-    border-radius: 100px;
-    color: white;
-    border-style: none;
+    background-color:#802c6e;
+    padding:11px 40px;
+    border-radius:1000px;
+    color:white;
+    border:none;
 }
 
 .btn1:hover{
-    background-color: #99558a;
-    color: rgb(255, 255, 255);
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
+    background-color:#99558a;
+    color:white;
+    transition:0.5s ease-in-out;
+    cursor:pointer;
 }
 
 .btn2{
-    border: 1px solid #802c6e;
-    padding: 10px 40px;
-    border-radius: 100px;
-    color: #802c6e;
+    border:1px solid #802c6e;
+    padding:11px 40px;
+    border-radius:1000px;
+    color:#802c6e;
 }
 
 .btn2:hover{
-    background-color: #802c6e;
-    color: white;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
+    background-color:#802c6e;
+    color:white;
+    transition:0.5s ease-in-out;
+    cursor:pointer;
 }
 
-.left, .right{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.left,
+.right{
+    flex:1 1 320px;
+    display:flex;
+    flex-direction:column;
 }
 
 .left{
-    align-items: flex-start;
+    align-items:flex-start;
 }
 
 .right{
-    align-items: center;
+    align-items:center;
 }
 
 .right img{
-    width: 100%;
-    min-width: 450px;
-    height: 400px;
+    width:100%;
+    max-width:560px;
+    height:auto;
 }
-

@@ -9,33 +9,38 @@
     color: #802c6e;
     margin-bottom: 2px;
     font-weight: 500;
+    text-align: center;
 }
 
 .sub2{
     color: rgb(79, 79, 79);
-    margin-bottom: 100px;
+    margin-bottom: 64px;
     text-align: center;
+    width: 90%;
     max-width: 700px;
 }
 
 .request-box{
     min-height: 400px;
-    width: 100%;
+    width: 90%;
     max-width: 1210px;
     background-color: rgb(19, 12, 12);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     border-radius: 20px;
     margin: auto;
     gap: 20px;
-    padding: 30px;
+    padding: 32px;
     box-sizing: border-box;
 }
 
 .left,
 .right{
-    flex: 1;
+    flex: 1 1 250px;
+    width: 100%;
+    min-width: 0;
 }
 
 .left{
@@ -52,14 +57,15 @@
 
 .btn{
     display: flex;
-    gap: 20px;
+    gap: 16px;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 button{
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 11px 19px;
     cursor: pointer;
     border: 1px solid #ffddb5;
     background: transparent;
@@ -78,7 +84,9 @@ button:hover{
     color: rgb(221, 100, 0);
     height: 250px;
     overflow: auto;
-    padding: 20px;
+    padding: 16px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .right-response{
@@ -87,12 +95,16 @@ button:hover{
     color: rgb(221, 100, 0);
     height: 250px;
     overflow: auto;
-    padding: 20px;
+    padding: 16px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 pre{
     font-family: monospace;
-    font-size: 18px;
+    font-size: 14px;
     margin: 0;
     white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }

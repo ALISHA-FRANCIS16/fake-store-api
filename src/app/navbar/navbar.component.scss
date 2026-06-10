@@ -1,27 +1,32 @@
-.navbar {
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    padding: 20px 95px;
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 6%;
+    width:100%;
+    box-sizing:border-box;
+    flex-wrap:wrap;
 }
 
 .logo{
-    height: 46px;
-    width: 50px;
+    width:48px;
+    height:auto;
 }
 
 .list{
-    display: flex;
-    gap: 70px;
-    list-style: none;
-    color: rgb(118, 118, 118);
+    display:flex;
+    gap:40px;
+    list-style:none;
+    color:rgb(118,118,118);
     font-size: 14px;
+    flex-wrap:wrap;
+    padding:0;
 }
 
 .list li{
-    cursor: pointer;
+    cursor:pointer;
 }
 
 .list li:hover{
-    color: rgb(75, 75, 75);
+    color:rgb(75,75,75);
 }
